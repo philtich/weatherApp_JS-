@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    button {@apply border-black border-2 rounded-md p-2 w-36 transition-all }
+
+    #submitButton:hover {@apply bg-slate-500 text-white}
+
+    #clear:hover{@apply bg-red-800 text-white}
+
+    input{@apply border-slate-600 border-2 rounded-md p-2 bg-blue-500 text-white w-1/2}
+
+    input::placeholder{@apply text-white}
+
+    #cities{@apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8}
+
+    .cardCity{@apply border-2 border-black p-2 rounded-md bg-blue-500 text-white flex flex-col gap-2 w-32 md:w-40 justify-center items-center}
+
+    h2{@apply underline font-bold}
+
+    .deleteButton {@apply bg-red-600 text-white rounded-full w-8 h-8 flex justify-center items-center}
+}
